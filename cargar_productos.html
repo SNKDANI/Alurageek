@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1 class="titulo">Formulario para Agregar Nuevo Producto</h1>
+
+    <!-- Formulario para agregar producto -->
+    <form id="form_producto" class="formulario">
+        <label for="imagen">Imagen:</label>
+        <input type="file" class="boton" id="imagen" accept="image/*" required><br><br>
+
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="categoria">Categoría:</label>
+<select id="categoria" required>
+    <option value="">Seleccione una categoría</option>
+    <option value="ropa">ROPA</option>
+    <option value="accesorios">ACCESORIOS</option>
+</select><br><br>
+
+        <label for="precio">Precio:</label>
+        <div class="campo-moneda">
+            <span class="simbolo-moneda">$</span>
+            <input type="text" id="precio" required>
+        </div>
+        <br><br>
+
+        <button type="submit">Subir Producto</button>
+    </form>
+
+    <div id="mensaje_exito" style="display:none;" class="mensaje">
+        <p>El producto ha sido agregado correctamente.</p>
+        <button onclick="window.location.href='index.html'">Volver al Inicio</button>
+    </div>
+
+    <script src="script_productos.js"></script>
+
+</body>
+</html>

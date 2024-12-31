@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <div class="menu container">
+            <a href="#" class="logo_cabecera">ALURAGEEK</a>
+            <input type="checkbox" id="menu" class="input">
+            <label for="menu">
+                <img src="./assets/icons8-menu-50.png" class="menu_icono" alt="Abrir menú">
+            </label>
+            <nav class="navegacion_cabecera">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="./cargar_productos.html">Agrega más productos</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <div id="carrito-contenedor">
+                            <img src="./assets/icons8-carrito-de-compras-48.png" id="img-carrito" alt="Carrito de compras">
+                            <span id="cantidad-carrito" class="contador">0</span>
+                        </div> 
+                        <div id="cabecera_carrito">
+                            <table id="lista_carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                    $<span id="total-carrito"> 0</span>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar_carrito" class="btn-3">Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+                
+                
+            </div>
+            
+        </div>
+        <section class="header-content container">
+            <div class="header-txt">
+                <span>Bienvenido a la tienda</span>
+                <h1>Productos Increíbles</h1>
+                <p>Descubre las mejores prendas y accesorios que tenemos para ofrecerte de la mejor calidad</p>
+                <div class="buttons">
+                    <a href="#productos" class="btn-1">Ver Productos</a>
+                    <a href="#categorias" class="btn-1">Categorías</a>
+                </div>
+            </div>
+            <figure class="header-img">
+                <img src="./assets/price-2389232_1280.png" alt="Imagen principal de la tienda" class="imagen_principal">
+            </figure>
+        </section>
+    </header>
+
+    <main>
+        <section class="categorias" id="categorias">
+            <h2 id="titulo-categorias">Categorías</h2>
+            <article class="categoria" >
+                <figure><img src="./assets/needle-312738_1280.png" alt="Ropa" class="categoria-imagen"></figure>
+                <div class="categoria-item">
+                    <h3><a data-categoria="ropa">Ropa</a></h3>
+                    <p>Explora nuestra variedad de prendas para cada ocasión.</p>
+                </div>
+            </article>
+            <article class="categoria" >
+                <figure><img src="./assets/pendant-37407_1280.png" alt="Accesorios" class="categoria-imagen"></figure>
+                <div class="categoria-item">
+                    <h3><a data-categoria="accesorios">Accesorios</a></h3>
+                    <p>Encuentra los accesorios perfectos para complementar tu estilo.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="productos container" id="productos">
+            <h2>PRODUCTOS</h2>
+            <div class="productos_generales" id="productos_generales"></div>
+            <div class="mas"><a class="btn-2" id="cargar_mas">Cargar Más</a></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer_creditos">Desarrollado por SNKDANI estudiante de Alura Latam</h2>
+        <!--
+        <section class="footer_categorias">
+            <div class="footer_link">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Tecnología</a></li>
+                    <li><a href="#">Hogar</a></li>
+                </ul>
+            </div>
+        </section>
+        -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

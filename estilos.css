@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+.titulo {
+    text-align: center;
+    margin: 2rem;
+    color: #004d40;
+}
+
+.formulario {
+    margin: 2rem auto;
+    max-width: 400px;
+    padding: 1rem;
+    border: 2px solid #004d40;
+    border-radius: 5px;
+    
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}	
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #004d40;
+    border-radius: 5px;
+}
+
+.formulario button {
+    background-color: #004d40;
+    color: white;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.formulario button:hover {
+    background-color: #333;
+}
+
+.formulario select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 15px;
+    color: #012e26;
+    margin-bottom: 1rem;
+    border: 1px solid #004d40;
+    border-radius: 5px;
+}
+
+.formulario input[type="file"] {
+    margin-right: 0.5rem;
+    color: #004d40;
+}
+
+.mensaje {
+    text-align: center;
+    align-items: center;
+    margin: 5rem;
+    padding: 10rem;
+    background-color: #004d40;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}	
+
+.mensaje p {
+    margin-right: 1rem;
+    padding: 1.5rem;
+    font-size: 20px;
+}
+
+.mensaje button {
+    background-color: #012e26;
+    color: white;
+    font-size: 20px;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mensaje button:hover {
+    background-color: #015a4b;
+}
+
+@media (max-width: 991px) {
+    .mensaje {
+        margin: 30px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+}
